@@ -1,11 +1,14 @@
+# урлы для апи-запросов
 ORDERS_URL = "https://qa-scooter.praktikum-services.ru/api/v1/orders"
 COURIERS_URL = "https://qa-scooter.praktikum-services.ru/api/v1/courier"
 
+# данные существующего в базе курьера для негативных тестов логина
 STABLE_DATA_COURIER = {
     "login": "ktrof3344",
     "password": "ktrof3344"
 }
 
+# данные для теста создания курьера с неполными данными
 COURIER_WITHOUT_LOGIN = {
     "password": "ktrof_password1122"
 }
@@ -13,6 +16,7 @@ COURIER_WITHOUT_PASSWORD = {
     "login": "ktrof_login1122"
 }
 
+# данные для тестов создания заказа с различными вариантами цвета самоката
 ORDER_WITH_BLACK_COLOR = {
     "firstName": "Шерлок",
     "lastName": "Холмс",

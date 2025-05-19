@@ -42,7 +42,7 @@ class CourierMethods:
         return response.status_code, response.json()
 
 
-    @allure.step("Авторизируемся в приложении.")
+    @allure.step("Авторизируемся в приложении, получаем id")
     # По умолчанию используем сгенерированные для экземпляра данные. Возвращаем id курьера
     def login_courier(self, payload = None):
         if payload is None:
